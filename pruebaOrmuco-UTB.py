@@ -12,10 +12,10 @@ def main():
  print("\n")
  print("Por favor, dinos tu nombre : ")
  nombre = raw_input()
- print("mucho gusto en conocerte , " ,nombre ," \n")
+ print("mucho gusto en conocerte %s \n" % nombre)
  print("¿podrias indicarme cual es tu color favorito ?")
  color = raw_input()
- print("me agarda el color  , " ,color ," \n")
+ print("me agrada el color %s \n " % color)
  print "Me guataría conocerte un poco más \n ahora necesito saber con cual de estas  mascotas \n simpatizas más, ¡debes escoger una!"
  print("======================================")
  print("		MASCOTAS                     ")
