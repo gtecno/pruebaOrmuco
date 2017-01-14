@@ -1,0 +1,56 @@
+========================================================================
+Access to serve, via ssh
+
+	ip : UbuntuServerPY8786.cloudapp.net
+	user : gabriel
+	password : M4trix.2016$
+
+=========================================================================
+
+1) first step, run app 
+
+gabriel@UbuntuServerPY: cd /home/pruebaORMUCO
+gabriel@UbuntuServerPY:/home/pruebaORMUCO$ ls 
+
+#file name : pruebaOrmuco-UTB.py
+#execute app python , into dir "/home/pruebaORMUCO"
+#please used sudo for run app   o run python pruebaOrmuco-UTB.py
+
+
+gabriel@UbuntuServerPY:/home/pruebaORMUCO$ python pruebaOrmuco-UTB.py
+gabriel@UbuntuServerPY:/home/pruebaORMUCO$ sudo python pruebaOrmuco-UTB.py
+
+
+2) seconds step
+
+the application , have three step,
+
+    1. input your name:   "example -> Gabriel Calvo"
+	2. input your favorite color "example -> Rojo"
+	3  appear a menu , with three options [PERRO, GATO, HAMSTER], 
+	    you have choose a one option  
+		Example 1  = PERRO
+		        2 = GATO
+				3 = HAMSTER
+				
+	THEN ENTER 0 , TO EXIT.
+
+3) three step	
+       
+	  
+    The data entered will be persisted a Mysql database
+
+    reed the message similar this: 
+	identificador=1, nombre=Gabriel Calvo, color=Azul, mascota=PERRO
+	
+	
+
+
+
+NOTE : 	
+     database called "test_python"
+	 table for this exercise called "prueba_python"
+	
+	 credential for database Mysql
+	 user : root
+	 password : root
