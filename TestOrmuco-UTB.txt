@@ -31,7 +31,7 @@ the application , have three step,
 	    you have choose a one option  
 		Example 1  = PERRO
 		        2 = GATO
-				3 = HAMSTER
+			3 = HAMSTER
 				
 	THEN ENTER 0 , TO EXIT.
 
