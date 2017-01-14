@@ -52,7 +52,7 @@ def main():
  cursor.execute(sql)
  # Efectuamos los cambios en la base de datos
  bd.commit()
- 
+
  sql = "SELECT * FROM prueba_python"
  cursor.execute(sql)
  # Obtenemos todos los registros en una lista de listas
@@ -64,25 +64,21 @@ def main():
      mascota = registro[3]
  # Imprimimos los resultados obtenidos
  print "identificador=%d, nombre=%s, color=%s, mascota=%s" % (identificador, nombre, color, mascota)
- 
- 
+  
  print('\n\n')
- print('================================================================================================================================')
+ print('=============================================================================================')
  print('      			TOTAL DE USUARIOS ENCUESTADOS           ')
- print('================================================================================================================================')
- print('   IDENTIFICADOR   	-		NOMBRE   	-		COLOR      -		MASCOTA')
- print('================================================================================================================================')
+ print('=============================================================================================')
+ print("%-20s%-40s%-25s%-15s" % ('IDENTIFICADOR','NOMBRE','COLOR','MASCOTA'))
+ print('=============================================================================================')
  sql = "SELECT * FROM prueba_python"
  cursor.execute(sql)
  listado = cursor.fetchall()
  for registro in listado:
-  print("       %d           		%s        			%s 	     				%s" %(registro[0],registro[1], registro[2],registro[3]))
+  print("%-20d%-40s%-25s%-15s" %(registro[0],registro[1], registro[2],registro[3]))
  
- print('================================================================================================================================')
-
- 
+ print('=============================================================================================') 
  #Desconectamos la base de datos MySQL 
  bd.close()
 main()
- 
  
